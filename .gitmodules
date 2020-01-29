@@ -1,0 +1,4 @@
+[submodule "Adafruit-PN532"]
+	path = Adafruit-PN532
+	url = https://github.com/zhongfu/Adafruit-PN532.git
+	branch = large-packbuffsiz
