@@ -7,11 +7,12 @@ Was originally planned to be used on bike-sharing systems which are unable to ac
 
 You are recommended to use our modified Adafruit_PN532 library to support ISO1443B (required by CEPAS), https://github.com/zhongfu/Adafruit-PN532
 
+For this implementation, the CEPAS encrypted purse is sent to our middleware which delays to EZ-Link; EZ-Link then replies us with the debit cryptogram which we relay to the card.
+After deduction is completed, the card returns a debit receipt cryptogram which should be subsequently relayed back to EZ-Link (Debit receipt cryptogram upload was not implemented in this code due to commercial constraints) 
+
 
 How do I use it for my own projects?
 ========
-
-For this implementation, the CEPAS debit cryptogram is generated on our server which then relays the message to EZ-Link's online SAM API (which we cannot share, sorry)
 
 0. Purchase the CEPAS specifications from SPRING Singapore, www.singaporestandardseshop.sg, sorry no sharing too :-(
 1. Find EZ-Link’s business/partnerships team and present a business case (number of touchpoints, transaction volume, etc) to request for the online SAM API 
