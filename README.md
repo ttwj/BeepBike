@@ -9,7 +9,7 @@ You are recommended to use our modified Adafruit_PN532 library to support ISO144
 
 For this implementation, the CEPAS encrypted purse is sent to our middleware which relays to EZ-Link; EZ-Link then replies us with the debit cryptogram which we relay back to the card.
 
-After deduction is completed, the card returns a debit receipt cryptogram which should be subsequently relayed back to EZ-Link (Debit receipt cryptogram upload was not implemented in this code due to commercial constraints) 
+After deduction is completed, the card returns a debit receipt cryptogram which should be subsequently relayed back to EZ-Link for daily settlement (Debit receipt cryptogram upload was not implemented in this code due to commercial constraints) 
 
 
 How do I use it for my own projects?
