@@ -7,7 +7,7 @@ Was originally planned to be used on bike-sharing systems which are unable to ac
 
 You are recommended to use our modified Adafruit_PN532 library to support ISO1443B (required by CEPAS), https://github.com/zhongfu/Adafruit-PN532
 
-For this implementation, the CEPAS encrypted purse is sent to our middleware which delays to EZ-Link; EZ-Link then replies us with the debit cryptogram which we relay to the card.
+For this implementation, the CEPAS encrypted purse is sent to our middleware which relays to EZ-Link; EZ-Link then replies us with the debit cryptogram which we relay back to the card.
 
 After deduction is completed, the card returns a debit receipt cryptogram which should be subsequently relayed back to EZ-Link (Debit receipt cryptogram upload was not implemented in this code due to commercial constraints) 
 
